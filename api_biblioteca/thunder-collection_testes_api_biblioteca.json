@@ -1,0 +1,102 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "testes_api_biblioteca",
+    "collectionId": "23191fec-c315-4160-9ef9-746570431e99",
+    "dateExported": "2025-06-17T14:05:30.683Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "a444ed84-879f-406d-a298-97540646a80a",
+            "colId": "23191fec-c315-4160-9ef9-746570431e99",
+            "containerId": "",
+            "name": "retorna todos os livros",
+            "url": "localhost/api_biblioteca/api.php",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2025-06-17T13:38:10.264Z",
+            "modified": "2025-06-17T13:38:35.849Z",
+            "headers": []
+        },
+        {
+            "_id": "50f1ffb6-eb6f-4813-b08b-4eea633a06d2",
+            "colId": "23191fec-c315-4160-9ef9-746570431e99",
+            "containerId": "",
+            "name": "retorna livro por ID",
+            "url": "localhost/api_biblioteca/api.php?id",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2025-06-17T13:41:41.538Z",
+            "modified": "2025-06-17T14:01:06.027Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "af92c23c-8377-4291-ba6f-907bad07c36c",
+            "colId": "23191fec-c315-4160-9ef9-746570431e99",
+            "containerId": "",
+            "name": "adiciona livro",
+            "url": "localhost/api_biblioteca/api.php",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2025-06-17T13:43:55.513Z",
+            "modified": "2025-06-17T13:47:04.020Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"isbn\": 9784247100662,\n  \"titulo\": \"Livro aleatório 1\",\n  \"autor\": \"Fulano de Tal\",\n  \"genero\": \"drama\",\n  \"editora\": \"Editora MCM\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "01ccf776-e8f1-4160-84ca-ee19f3a6d01a",
+            "colId": "23191fec-c315-4160-9ef9-746570431e99",
+            "containerId": "",
+            "name": "atualiza dados do livro por ID",
+            "url": "localhost/api_biblioteca/api.php?id=4",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2025-06-17T13:47:35.292Z",
+            "modified": "2025-06-17T13:48:12.351Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "4",
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"titulo\": \"Livro da ETEC MCM\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "827d9183-b62b-43e6-b1d7-fb448471f602",
+            "colId": "23191fec-c315-4160-9ef9-746570431e99",
+            "containerId": "",
+            "name": "deleta livro por ID",
+            "url": "localhost/api_biblioteca/api.php?id=4",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2025-06-17T13:48:38.658Z",
+            "modified": "2025-06-17T13:48:53.557Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "4",
+                    "isPath": false
+                }
+            ]
+        }
+    ],
+    "ref": "xAtxI6AZbJxBeOvBPu4G1WPCAxdcUSNCEt9Uvpt7p0aaAQPM_2UdOOTyEnYOIcRnzJJDjbdQJ2HNXbSdDgYa-w"
+}

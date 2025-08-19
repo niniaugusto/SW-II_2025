@@ -1,0 +1,129 @@
+{
+    "info": {
+        "_postman_id": "a446ea28-dfc7-46b7-8f48-218427752446",
+        "name": "livros",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "retorna todos os livros",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "localhost/api_biblioteca/livros.php",
+                    "path": [
+                        "api_biblioteca",
+                        "livros.php"
+                    ],
+                    "host": [
+                        "localhost"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "retorna livro por ID",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "localhost/api_biblioteca/livros.php?id=2",
+                    "query": [
+                        {
+                            "key": "id",
+                            "value": "2"
+                        }
+                    ],
+                    "variable": [],
+                    "path": [
+                        "api_biblioteca",
+                        "livros.php"
+                    ],
+                    "host": [
+                        "localhost"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "adiciona livro",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "localhost/api_biblioteca/livros.php",
+                    "path": [
+                        "api_biblioteca",
+                        "livros.php"
+                    ],
+                    "host": [
+                        "localhost"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"autor_id\": 2,\n  \"isbn\": 9786555320060,\n  \"titulo\": \"A paixão segundo G.H\",\n  \"ano_publicacao\": 1964,\n  \"genero\": \"Romance\",\n  \"editora\": \"Rocco\"\n}"
+                }
+            }
+        },
+        {
+            "name": "atualiza livro por ID",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "localhost/api_biblioteca/livros.php?id=3",
+                    "query": [
+                        {
+                            "key": "id",
+                            "value": "3"
+                        }
+                    ],
+                    "variable": [],
+                    "path": [
+                        "api_biblioteca",
+                        "livros.php"
+                    ],
+                    "host": [
+                        "localhost"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{ \n  \"titulo\": \"A paixão segundo G.H.\"\n}"
+                }
+            }
+        },
+        {
+            "name": "deleta livro por ID",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "localhost/api_biblioteca/livros.php?id=3",
+                    "query": [
+                        {
+                            "key": "id",
+                            "value": "3"
+                        }
+                    ],
+                    "variable": [],
+                    "path": [
+                        "api_biblioteca",
+                        "livros.php"
+                    ],
+                    "host": [
+                        "localhost"
+                    ]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+Em seu frontend exiba as seguintes informações: 
+- Um campo de input para digitar o CEP a ser pesquisado. 
+- Exibir: 
+a) Logradouro 
+b) Bairro 
+c) Localidade 
+d) UF 
+e) Estado 
+f) Região

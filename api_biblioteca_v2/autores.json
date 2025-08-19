@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "nome": "Machado de Assis",
+        "nacionalidade": "Brasileiro",
+        "nascimento": "21-06-1839"
+    },
+    {
+        "id": 2,
+        "nome": "Clarice Lispector",
+        "nacionalidade": "Brasileira",
+        "nascimento": "10-12-1920"
+    },
+    {
+        "id": 3,
+        "nome": "Fulano de tal",
+        "nacionalidade": "Colombiano",
+        "nascimento": "10-10-2000"
+    }
+]

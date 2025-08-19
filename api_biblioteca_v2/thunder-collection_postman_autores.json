@@ -1,0 +1,106 @@
+{
+    "info": {
+        "_postman_id": "faa2d360-0e16-43dc-8d91-7a686ef1ade8",
+        "name": "autores",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "retorna todos os autores",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "localhost/api_biblioteca/autores.php",
+                    "path": [
+                        "api_biblioteca",
+                        "autores.php"
+                    ],
+                    "host": [
+                        "localhost"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "retorna autor por ID",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "localhost/api_biblioteca/autores.php?id=1",
+                    "query": [
+                        {
+                            "key": "id",
+                            "value": "1"
+                        }
+                    ],
+                    "variable": [],
+                    "path": [
+                        "api_biblioteca",
+                        "autores.php"
+                    ],
+                    "host": [
+                        "localhost"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "adiciona autor",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "localhost/api_biblioteca/autores.php",
+                    "path": [
+                        "api_biblioteca",
+                        "autores.php"
+                    ],
+                    "host": [
+                        "localhost"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"nome\": \"Fulano de tal\",\n  \"nacionalidade\": \"Colombiano\",\n  \"nascimento\": \"10-10-2000\"\n}"
+                }
+            }
+        },
+        {
+            "name": "atualiza autor por ID",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "localhost/api_biblioteca/autores.php?id=3",
+                    "query": [
+                        {
+                            "key": "id",
+                            "value": "3"
+                        }
+                    ],
+                    "variable": [],
+                    "path": [
+                        "api_biblioteca",
+                        "autores.php"
+                    ],
+                    "host": [
+                        "localhost"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"nome\": \"Ciclano\"\n}"
+                }
+            }
+        }
+    ]
+}

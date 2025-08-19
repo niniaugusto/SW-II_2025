@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "autor_id": 1,
+        "isbn": 9786556404721,
+        "titulo": "Dom Casmurro",
+        "ano_publicacao": 1899,
+        "genero": "Romance",
+        "editora": "Nova Fronteira"
+    },
+    {
+        "id": 2,
+        "autor_id": 1,
+        "isbn": 9788525406873,
+        "titulo": "Memórias Póstumas de Brás Cubas",
+        "ano_publicacao": 1881,
+        "genero": "Romance",
+        "editora": "L&PM Pocket"
+    }
+]

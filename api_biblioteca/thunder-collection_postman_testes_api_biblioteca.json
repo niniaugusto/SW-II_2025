@@ -1,0 +1,129 @@
+{
+    "info": {
+        "_postman_id": "5d2c4461-22b4-426b-a0c1-ddf15aeb5f49",
+        "name": "testes_api_biblioteca",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "retorna todos os livros",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "localhost/api_biblioteca/api.php",
+                    "path": [
+                        "api_biblioteca",
+                        "api.php"
+                    ],
+                    "host": [
+                        "localhost"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "retorna livro por ID",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "localhost/api_biblioteca/api.php?id",
+                    "query": [
+                        {
+                            "key": "id",
+                            "value": ""
+                        }
+                    ],
+                    "variable": [],
+                    "path": [
+                        "api_biblioteca",
+                        "api.php"
+                    ],
+                    "host": [
+                        "localhost"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "adiciona livro",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "localhost/api_biblioteca/api.php",
+                    "path": [
+                        "api_biblioteca",
+                        "api.php"
+                    ],
+                    "host": [
+                        "localhost"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"isbn\": 9784247100662,\n  \"titulo\": \"Livro aleatório 1\",\n  \"autor\": \"Fulano de Tal\",\n  \"genero\": \"drama\",\n  \"editora\": \"Editora MCM\"\n}"
+                }
+            }
+        },
+        {
+            "name": "atualiza dados do livro por ID",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "localhost/api_biblioteca/api.php?id=4",
+                    "query": [
+                        {
+                            "key": "id",
+                            "value": "4"
+                        }
+                    ],
+                    "variable": [],
+                    "path": [
+                        "api_biblioteca",
+                        "api.php"
+                    ],
+                    "host": [
+                        "localhost"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"titulo\": \"Livro da ETEC MCM\"\n}"
+                }
+            }
+        },
+        {
+            "name": "deleta livro por ID",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "localhost/api_biblioteca/api.php?id=4",
+                    "query": [
+                        {
+                            "key": "id",
+                            "value": "4"
+                        }
+                    ],
+                    "variable": [],
+                    "path": [
+                        "api_biblioteca",
+                        "api.php"
+                    ],
+                    "host": [
+                        "localhost"
+                    ]
+                }
+            }
+        }
+    ]
+}
